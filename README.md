@@ -7,11 +7,10 @@
 # 配置方式
 
 phpfpm-server-5.2.17:
-        image: registry.cn-hangzhou.aliyuncs.com/shenlongb/php5.2.17:1
-        #image: lkopecky/php5.2-fpm
-        expose: 
-           - 9000
-        volumes:
-           - /app/docker_server/DOCKER_SERVER_CONF/php5.2.17-fpm/php.ini:/usr/local/etc/php/php.ini
+        image: registry.cn-hangzhou.aliyuncs.com/shenlongb/php5.2.17:1 
+        expose:  
+           - 9000 
+        volumes: 
+           - /app/docker_server/DOCKER_SERVER_CONF/php5.2.17-fpm/php.ini:/usr/local/etc/php/php.ini 
 
  
